@@ -1,0 +1,79 @@
+body{
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px 20px;
+}
+
+.resume-container{
+    background-color: #D3DAD9;
+}
+
+.header{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    background-color: #468A9A;
+}
+
+header{
+    text-align: center;
+    margin-top: 0;
+}
+
+#header-title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+
+.section-row{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.section-title{
+    flex: 1;
+    text-align: center;
+    min-width: 150px;
+    padding-right: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.section-content{
+    flex: 3;
+}
+
+.list-content{
+    padding-left: 15px;
+}
+
+.footer{
+    border-top: 2px solid #ccc;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #468A9A;
+}
+
+.footer p{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 576px) {
+    body{
+        padding: 5px 10px;
+    }
+    .section-row {
+        flex-direction: column;
+    }
+    .section-title {
+        text-align: left;
+        padding-right: 0;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+    .section-content {
+        flex: none;
+        padding-left: 10px;
+    }
+} 
