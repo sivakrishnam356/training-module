@@ -1,21 +1,22 @@
 body{
     line-height: 1.6;
     margin: 0;
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
 }
 
 .resume-container{
     background-color: #D3DAD9;
+    margin: 20px;
 }
 /* Header */
-.header{
+#mypage-header{
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: 2px solid #ccc;
     background-color: #468A9A;
 }
 
-header{
+#header-content{
     text-align: center;
     margin-top: 0;
 }
@@ -47,23 +48,20 @@ header{
     padding-left: 15px;
 }
 /* Footer */
-.footer{
+#mypage-footer{
     border-top: 2px solid #ccc;
     margin-top: 20px;
     text-align: center;
     background-color: #468A9A;
 }
 
-.footer p{
+.footer-content{
     margin: 0;
     padding: 0;
 }
 
 /* Mobile screen view */
 @media (max-width: 576px) {
-    body{
-        padding: 5px 10px;
-    }
     .section-row {
         flex-direction: column;
     }
