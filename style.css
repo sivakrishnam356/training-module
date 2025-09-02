@@ -7,7 +7,7 @@ body{
 .resume-container{
     background-color: #D3DAD9;
 }
-
+/* Header */
 .header{
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -25,7 +25,7 @@ header{
     margin-bottom: 0px;
     padding-top: 10px;
 }
-
+/* Main */
 .section-row{
     display: flex;
     margin-bottom: 30px;
@@ -46,7 +46,7 @@ header{
 .list-content{
     padding-left: 15px;
 }
-
+/* Footer */
 .footer{
     border-top: 2px solid #ccc;
     margin-top: 20px;
@@ -59,6 +59,7 @@ header{
     padding: 0;
 }
 
+/* Mobile screen view */
 @media (max-width: 576px) {
     body{
         padding: 5px 10px;
