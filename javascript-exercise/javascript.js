@@ -17,11 +17,11 @@ function max_of_numbers() {
     error_message.innerText = "";
 
     // Length validation
-    let first_number_length = first_number.toString().length;
-    let second_number_length = second_number.toString().length;
+    let first_number_length = first_number.length;
+    let second_number_length = second_number.length;
 
     if (first_number_length > 10 || second_number_length > 10) {
-        error_message.innerText = "Number should be below 10 digits";
+        error_message.innerText = "The number field must not exceed 10 digits.";
         return;
     }
 
@@ -32,6 +32,9 @@ function max_of_numbers() {
     }
     // Finding Max.
     let max_number = 0;
+    first_number = (+first_number);
+    second_number = (+second_number);
+
     if (first_number > second_number) {
         max_number = first_number;
     } else {
@@ -67,7 +70,7 @@ function reverse_string() {
 
     // Input length validation
     if (input_string.length > 15) {
-        error_message.innerText = "String should be below 15 characters";
+        error_message.innerText = "String must be less than 15 characters";
         return;
     }
 
@@ -107,7 +110,7 @@ function find_largest_word() {
     let string_array = input_string.split(",");
     for (let word of string_array) {
         if (word.length > 10) {
-            error_message.innerText = "Word should be below 10 characters";
+            error_message.innerText = "Word must be less than 10 characters";
             return;
         } else {
             error_message.innerText = "";
@@ -146,9 +149,9 @@ function resume_builder() {
     // Setting output tags empty
     result.innerText = "";
     error_message.innerText = "";
-
+    
     // Input empty validation
-    let phone_number_length = phone_number.toString().length;
+    let phone_number_length = phone_number.length;
 
     if (username === '') {
         error_message.innerText = "Enter valid input";
@@ -163,12 +166,12 @@ function resume_builder() {
 
     // Input length validation
     if (username.length > 20) {
-        error_message.innerText = "String should be below 20 characters";
+        error_message.innerText = "String must be less than 20 characters";
         return;
     }
 
     if (phone_number_length > 10 || phone_number_length < 10) {
-        error_message.innerText = "Number should be 10 digits";
+        error_message.innerText = "Number must be 10 digits";
         return;
     }
 
@@ -210,12 +213,14 @@ window.onload = function () {
 
     if (user) {
         let header_title = document.getElementById("header-title");
-        let phone_number = document.getElementById("phone-number");
+        let phone_number = document.getElementById("phonenumber");
+        console.log(phone_number);
         if (user.name) {
-            header_title.textContent = user.name;
+            header_title.innerText = user.name;
         }
-        if (user.phonenumber && phone_number) {
-            phone_number.textContent = "Phone : +91 " + user.phonenumber;
+        console.log(user.phonenumber);
+        if (user.phonenumber) {
+            phone_number.innerText = "Phone : +91 " + user.phonenumber;
         }
     }
 };

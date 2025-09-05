@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="resume-container">
+    <div id="resume-container">
         <!--*******************************
                 Header section
         *********************************** -->
@@ -136,102 +136,108 @@
                 </p>
             </footer>
         </div>
-    </div>
 
-    <!--*******************************
+
+        <!--*******************************
             Javascript Module
-    *********************************** -->
-
-    <!--*******************************
-        First section Finding Max
-    *********************************** -->
-    <div class="js-container">
-        <p class="card-title">Find Max Number</p>
-        <div class="card">
-            <form action="">
-
-                <label for="first-number" class="label-text">First Number </label><span class="asterisk">*</span><br>
-                <input type="number" id="first-number" name="first-number" required placeholder="Enter first number"
-                    class="input-box"><br>
-
-                <label for="second-number" class="label-text">Second Number </label><span class="asterisk">*</span><br>
-                <input type="number" id="second-number" required placeholder="Enter second number"
-                    class="input-box"><br>
-
-                <button type="button" class="card-button" onclick="max_of_numbers()">Find Max</button>
-            </form>
-
-            <div class="card-output">
-                <strong id="max-value-section" class="output-section"></strong>
-                <strong id="error" class="error-message"></strong>
-            </div>
-        </div>
-
-        <!--*******************************
-            Second section Reversing String
-        *********************************** -->
-        <p class="card-title">Reverse a string</p>
-        <div class="card">
-            <form action="">
-                <label for="input-string" class="label-text">Enter a string</label><span class="asterisk">*</span><br>
-                <input type="text" id="input-string" name="input-string" required placeholder="Enter a string"
-                    class="input-box"><br>
-
-                <button type="button" class="card-button" onclick="reverse_string()">Reverse</button>
-            </form>
-
-            <div class="card-output">
-                <strong id="reversed-string-section" class="output-section"></strong>
-                <strong id="error-reverse-string" class="error-message"></strong>
-            </div>
-        </div>
-
-        <!--*******************************
-            Third section Finding Longest Word
         *********************************** -->
 
-        <p class="card-title">Find Largest Word In A String</p>
-        <div class="card">
-            <form action="">
-                <label for="user-string" class="label-text">Enter a string</label><span class="asterisk">*</span><br>
-                <input type="text" id="user-string" name="user-string" required placeholder="Enter a string"
-                    class="input-box"><br>
-                <button type="button" onclick="find_largest_word()" class="card-button">Find Largest Word</button>
-            </form>
-
-
-            <div class="card-output">
-                <strong id="largest-word-section" class="output-section"></strong>
-                <strong id="error-largest-word" class="error-message"></strong>
-            </div>
-        </div>
-
         <!--*******************************
-            Fourth section Creating cookie
+            First section Finding Max
         *********************************** -->
 
-        <p class="card-title">Resume Builder</p>
-        <div class="card">
-            <form action="">
-                <label for="username" class="label-text">Enter your name</label><span class="asterisk">*</span><br>
-                <input type="text" id="username" name="username" required placeholder="Enter your name"
-                    class="input-box"><br>
+        <div class="js-container">
+            <p class="card-title">Find Max Number</p>
+            <div class="card">
+                <form action="">
 
-                <label for="phone-number" class="label-text">Enter your number</label><span
-                    class="asterisk">*</span><br>
-                <input type="number" id="phone-number" name="phone-number" required placeholder="Enter your number"
-                    class="input-box"><br>
-                <button type="button" onclick="resume_builder()" class="card-button">Create Resume</button>
-            </form>
+                    <label for="first-number" class="label-text">First Number </label><span
+                        class="asterisk">*</span><br>
+                    <input type="number" id="first-number" name="first-number" required placeholder="Enter first number"
+                        class="input-box"><br>
 
-            <div class="card-output">
-                <strong id="output-resume-builder" class="output-section"></strong>
-                <strong id="error-resume" class="error-message"></strong>
+                    <label for="second-number" class="label-text">Second Number </label><span
+                        class="asterisk">*</span><br>
+                    <input type="number" id="second-number" required placeholder="Enter second number"
+                        class="input-box"><br>
+
+                    <button type="button" class="card-button" onclick="max_of_numbers()">Find Max</button>
+                </form>
+
+                <div class="card-output">
+                    <strong id="max-value-section" class="output-section"></strong>
+                    <strong id="error" class="error-message"></strong>
+                </div>
             </div>
+
+            <!--*******************************
+                Second section Reversing String
+            *********************************** -->
+            <p class="card-title">Reverse a string</p>
+            <div class="card">
+                <form action="">
+                    <label for="input-string" class="label-text">Enter a string</label><span
+                        class="asterisk">*</span><br>
+                    <input type="text" id="input-string" name="input-string" required placeholder="Enter a string"
+                        class="input-box"><br>
+
+                    <button type="button" class="card-button" onclick="reverse_string()">Reverse</button>
+                </form>
+
+                <div class="card-output">
+                    <strong id="reversed-string-section" class="output-section"></strong>
+                    <strong id="error-reverse-string" class="error-message"></strong>
+                </div>
+            </div>
+
+            <!--*******************************
+                Third section Finding Longest Word
+            *********************************** -->
+
+            <p class="card-title">Find Largest Word In A String</p>
+            <div class="card">
+                <form action="">
+                    <label for="user-string" class="label-text">Enter a string</label><span
+                        class="asterisk">*</span><br>
+                    <input type="text" id="user-string" name="user-string" required placeholder="Ex: ramu,siva,uma"
+                        class="input-box"><br>
+                    <button type="button" onclick="find_largest_word()" class="card-button">Find Largest Word</button>
+                </form>
+
+
+                <div class="card-output">
+                    <strong id="largest-word-section" class="output-section"></strong>
+                    <strong id="error-largest-word" class="error-message"></strong>
+                </div>
+            </div>
+
+            <!--*******************************
+                Fourth section Creating cookie
+            *********************************** -->
+
+            <p class="card-title">Resume Builder</p>
+            <div class="card">
+                <form action="">
+                    <label for="username" class="label-text">Enter your name</label><span class="asterisk">*</span><br>
+                    <input type="text" id="username" name="username" required placeholder="Enter your name"
+                        class="input-box"><br>
+
+                    <label for="phone-number" class="label-text">Enter your number</label><span
+                        class="asterisk">*</span><br>
+                    <input type="number" id="phone-number" name="phone-number" required placeholder="Enter your number"
+                        class="input-box"><br>
+                    <button type="button" onclick="resume_builder()" class="card-button">Create Resume</button>
+                </form>
+
+                <div class="card-output">
+                    <strong id="output-resume-builder" class="output-section"></strong>
+                    <strong id="error-resume" class="error-message"></strong>
+                </div>
+            </div>
+
         </div>
 
-    </div>
-    <script src="javascript.js"></script>
+        <script src="javascript.js"></script>
 </body>
 
 </html>
