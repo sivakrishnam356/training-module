@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+}
+
+.resume-container {
+    background-color: #D3DAD9;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* Header */
+#mypage-header {
+    position: sticky;
+    top: 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    background-color: #468A9A;
+}
+
+#header-content {
+    text-align: center;
+    margin-top: 0;
+}
+
+#header-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+
+/* Main */
+.section-row {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    flex: 1;
+    text-align: center;
+    min-width: 150px;
+    padding-right: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.section-content {
+    flex: 3;
+}
+
+.list-content {
+    padding-left: 15px;
+}
+
+/* Footer */
+#mypage-footer {
+    border-top: 2px solid #ccc;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #468A9A;
+}
+
+.footer-content {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile screen view */
+@media (max-width: 576px) {
+    .section-row {
+        flex-direction: column;
+    }
+
+    .section-title {
+        text-align: left;
+        padding-right: 0;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .section-content {
+        flex: none;
+        padding-left: 10px;
+    }
+}
+
+.js-container {
+    margin-top: 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 400px;
+    padding: 40px;
+    border: 2px solid #1E93AB;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #EEEEEE;
+}
+
+
+.card-title {
+    margin-top: 100px;
+    color: #1f7a8c;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.label-text {
+    font-size: 18px;
+}
+
+.input-box {
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #5682B1;
+    margin: 10px 0;
+}
+
+.asterisk {
+    color: red;
+}
+
+.card-button {
+    border: 1px solid #5682B1;
+    padding: 10px;
+    width: 275px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: aliceblue;
+    background-color: #1f7a8c;
+    border-radius: 5px;
+}
+
+.card-output {
+    text-align: center;
+}
+
+.error-message {
+    text-align: center;
+    font-size: 20px;
+    color: red;
+}
+
+.output-section {
+    text-align: center;
+    font-size: 20px;
+}

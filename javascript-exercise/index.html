@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="resume-container">
+        <!--*******************************
+                Header section
+        *********************************** -->
+        <div id="mypage-header">
+            <header id="header-content">
+                <h1 id="header-title">Sivakrishna Mukku</h1>
+            </header>
+        </div>
+
+        <!--*******************************
+                Main section
+        *********************************** -->
+        <main id="mypage-center-content">
+
+            <!--*******************************
+                    Objectuve section
+            *********************************** -->
+            <div class="section-row">
+                <div class="section-title">
+                    <h2>Objective</h2>
+                </div>
+                <div class="section-content">
+                    <p>
+                        Software developer fresher with hands-on experience in building full stack applications
+                        using Java, Spring Boot, React and MySQL. Quick learner, problem solver, and collaborative
+                        team player eager to contribute to innovative projects.
+                    </p>
+                </div>
+            </div>
+
+            <!--*******************************
+                    Education section
+            *********************************** -->
+            <div class="section-row">
+                <div class="section-title">
+                    <h2>Education</h2>
+                </div>
+                <div class="section-content">
+                    <ol class="list-content">
+                        <li>
+                            <strong>B.Tech in Computer Science</strong>
+                            <p>
+                                I completed my Bachelor of Technology in Computer Science from Narayana Engineering
+                                College (2020-2024) with a GPA of 7.6.
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>Intermediate</strong>
+                            <p>
+                                I pursued my intermediate education at Narayana Junior College (2018-2020),
+                                where I got a GPA of 9.6.
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>Matriculation</strong>
+                            <p>
+                                I completed my schooling at Don Bosco English Medium High School in 2018 with a GPA
+                                of 9.8.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <!--*******************************
+                    Skills section
+            *********************************** -->
+            <div class="section-row">
+                <div class="section-title">
+                    <h2>Skills</h2>
+                </div>
+                <div class="section-content">
+                    <p>Core Java, HTML, CSS, MySQL, JavaScript, Servlets, JSP, JDBC, Spring, Spring
+                        Boot, Hibernate.
+                    </p>
+                </div>
+            </div>
+
+            <!--*******************************
+                    Projects section
+            *********************************** -->
+            <div class="section-row">
+                <div class="section-title">
+                    <h2>Projects</h2>
+                </div>
+                <div class="section-content">
+                    <ol class="list-content">
+                        <li>
+                            <strong>Food Delivery Application</strong>
+                            <p>
+                                Developed a web-based food delivery application that allows users to browse
+                                restaurants,
+                                view menus, place orders, and view their order history. The app includes user
+                                authentication, a shopping cart, and a checkout system.
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>Smart Expense Tracker</strong>
+                            <p>
+                                Built an expense tracker application to help users efficiently record and monitor
+                                their
+                                daily spending. Developed with Spring Boot, React, and MySQL.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </main>
+
+        <!--*******************************
+                Footer section
+        *********************************** -->
+        <div id="mypage-footer">
+            <footer id="mypage-footer-content">
+                <h2>Contact Details</h2>
+                <p class="footer-content">
+                    Email : sivakrishnam356@gmail.com
+                </p>
+                <p id="phonenumber" class="footer-content">
+                    Phone : +91 7337074710
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <!--*******************************
+            Javascript Module
+    *********************************** -->
+
+    <!--*******************************
+        First section Finding Max
+    *********************************** -->
+    <div class="js-container">
+        <p class="card-title">Find Max Number</p>
+        <div class="card">
+            <form action="">
+
+                <label for="first-number" class="label-text">First Number </label><span class="asterisk">*</span><br>
+                <input type="number" id="first-number" name="first-number" required placeholder="Enter first number"
+                    class="input-box"><br>
+
+                <label for="second-number" class="label-text">Second Number </label><span class="asterisk">*</span><br>
+                <input type="number" id="second-number" required placeholder="Enter second number"
+                    class="input-box"><br>
+
+                <button type="button" class="card-button" onclick="max_of_numbers()">Find Max</button>
+            </form>
+
+            <div class="card-output">
+                <strong id="max-value-section" class="output-section"></strong>
+                <strong id="error" class="error-message"></strong>
+            </div>
+        </div>
+
+        <!--*******************************
+            Second section Reversing String
+        *********************************** -->
+        <p class="card-title">Reverse a string</p>
+        <div class="card">
+            <form action="">
+                <label for="input-string" class="label-text">Enter a string</label><span class="asterisk">*</span><br>
+                <input type="text" id="input-string" name="input-string" required placeholder="Enter a string"
+                    class="input-box"><br>
+
+                <button type="button" class="card-button" onclick="reverse_string()">Reverse</button>
+            </form>
+
+            <div class="card-output">
+                <strong id="reversed-string-section" class="output-section"></strong>
+                <strong id="error-reverse-string" class="error-message"></strong>
+            </div>
+        </div>
+
+        <!--*******************************
+            Third section Finding Longest Word
+        *********************************** -->
+
+        <p class="card-title">Find Largest Word In A String</p>
+        <div class="card">
+            <form action="">
+                <label for="user-string" class="label-text">Enter a string</label><span class="asterisk">*</span><br>
+                <input type="text" id="user-string" name="user-string" required placeholder="Enter a string"
+                    class="input-box"><br>
+                <button type="button" onclick="find_largest_word()" class="card-button">Find Largest Word</button>
+            </form>
+
+
+            <div class="card-output">
+                <strong id="largest-word-section" class="output-section"></strong>
+                <strong id="error-largest-word" class="error-message"></strong>
+            </div>
+        </div>
+
+        <!--*******************************
+            Fourth section Creating cookie
+        *********************************** -->
+
+        <p class="card-title">Resume Builder</p>
+        <div class="card">
+            <form action="">
+                <label for="username" class="label-text">Enter your name</label><span class="asterisk">*</span><br>
+                <input type="text" id="username" name="username" required placeholder="Enter your name"
+                    class="input-box"><br>
+
+                <label for="phone-number" class="label-text">Enter your number</label><span
+                    class="asterisk">*</span><br>
+                <input type="number" id="phone-number" name="phone-number" required placeholder="Enter your number"
+                    class="input-box"><br>
+                <button type="button" onclick="resume_builder()" class="card-button">Create Resume</button>
+            </form>
+
+            <div class="card-output">
+                <strong id="output-resume-builder" class="output-section"></strong>
+                <strong id="error-resume" class="error-message"></strong>
+            </div>
+        </div>
+
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
