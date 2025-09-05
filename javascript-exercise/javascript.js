@@ -5,8 +5,8 @@
 function max_of_numbers() {
 
     // Getting values from the input fields
-    let first_number = document.getElementById("first-number").value.trim();
-    let second_number = document.getElementById("second-number").value.trim();
+    let first_number = document.getElementById("max-first-number").value.trim();
+    let second_number = document.getElementById("max-second-number").value.trim();
 
     // Getting html elements 
     let result = document.getElementById("max-value-section");
@@ -15,6 +15,12 @@ function max_of_numbers() {
     // Setting output tags empty
     result.innerText = "";
     error_message.innerText = "";
+
+    // Input null validation
+    if (first_number === '' || second_number === '') {
+        error_message.innerText = "Enter valid input";
+        return;
+    }
 
     // Length validation
     let first_number_length = first_number.length;
@@ -25,11 +31,6 @@ function max_of_numbers() {
         return;
     }
 
-    // Input null validation
-    if (first_number === '' || second_number === '') {
-        error_message.innerText = "Enter valid input";
-        return;
-    }
     // Finding Max.
     let max_number = 0;
     first_number = (+first_number);
@@ -42,7 +43,7 @@ function max_of_numbers() {
     }
 
     // Setting result to html tag.
-    result.innerText = "Max Value :" + " " + max_number;
+    result.innerText = `Max Value: ${max_number}`;
 }
 
 /* *****************************
@@ -50,7 +51,7 @@ function max_of_numbers() {
    ***************************** */
 
 function reverse_string() {
-    
+
     // Getting input from html.
     let input_string = document.getElementById("input-string").value.trim();
 
@@ -81,7 +82,7 @@ function reverse_string() {
     }
 
     // Setting result to html tag.
-    result.innerText = "Reversed string :" + " " + reversed_string;
+    result.innerText = `Reversed string: ${reversed_string}`;
 }
 
 /* ********************
@@ -92,9 +93,9 @@ function find_largest_word() {
     // Getting input from html.
     let input_string = document.getElementById("user-string").value.trim();
 
-     // Getting html element.
+    // Getting html element.
     let error_message = document.getElementById("error-largest-word");
-     let result = document.getElementById("largest-word-section");
+    let result = document.getElementById("largest-word-section");
 
     // Setting output tags empty
     error_message.innerText = "";
@@ -104,7 +105,7 @@ function find_largest_word() {
     if (input_string === '') {
         error_message.innerText = "Enter valid input";
         return;
-    } 
+    }
 
     // Word length validation.
     let string_array = input_string.split(",");
@@ -129,8 +130,8 @@ function find_largest_word() {
         }
     }
 
-     // Setting result to html tag.
-    result.innerText = "Largest word is :" + " " + largest_word;
+    // Setting result to html tag.
+    result.innerText = `Largest word is: ${largest_word}`;
 }
 
 /* ********************
@@ -149,7 +150,7 @@ function resume_builder() {
     // Setting output tags empty
     result.innerText = "";
     error_message.innerText = "";
-    
+
     // Input empty validation
     let phone_number_length = phone_number.length;
 
@@ -224,3 +225,4 @@ window.onload = function () {
         }
     }
 };
+
