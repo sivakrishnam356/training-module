@@ -12,9 +12,10 @@ body {
 #mypage-header {
     position: sticky;
     top: 0;
+    z-index: 1000;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #FF1A00;
+    border-bottom: 2px solid #ccc;
     background-color : #FFD580; 
 }
 
@@ -40,7 +41,7 @@ body {
     text-align: center;
     min-width: 150px;
     padding-right: 20px;
-    border-bottom: 2px solid #FF1A00;
+    border-bottom: 2px solid #ccc;
 }
 
 .section-content {
@@ -50,6 +51,10 @@ body {
 
 .list-content {
     padding-left: 15px;
+}
+
+#references{
+    display: none;
 }
 
 /* Footer */
@@ -215,16 +220,30 @@ body {
 
 /* Jquery styling */
 
-#resume-container.body-content{
+#resume-container,#mypage-header.highlight-bg {
     background-color: #FFFF88;
-    border: 2px solid #FF1A00;
-    color: #CC0000;
 }
 
+/* table border */
+.border{
+    border: 2px solid #FF1A00;
+}
+
+#mypage-header.border-bottom {
+    border-bottom: 2px solid #FF1A00;
+}
+
+/* input box */
 .input-field{
     border: none;
 }
 
-#footer-content{
-    display: none;
+/* section titles */
+.border-color {
+    border-bottom: 2px solid #FF1A00;
+}
+
+/* content text */
+.text-color{
+    color: #CC0000;
 }
