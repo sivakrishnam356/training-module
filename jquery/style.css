@@ -220,10 +220,11 @@ body {
 
 /* Jquery styling */
 
-#resume-container,#mypage-header.highlight-bg {
+#resume-container.highlight-bg,
+#mypage-header.highlight-bg,
+#js-container.highlight-bg {
     background-color: #FFFF88;
 }
-
 /* table border */
 .border{
     border: 2px solid #FF1A00;
@@ -241,6 +242,10 @@ body {
 /* section titles */
 .border-color {
     border-bottom: 2px solid #FF1A00;
+}
+
+.card-bg{
+    background-color: #FFFF88;
 }
 
 /* content text */

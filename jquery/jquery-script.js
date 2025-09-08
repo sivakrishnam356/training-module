@@ -15,6 +15,8 @@ $(document).ready(function () {
     // input box
     $(".input-box").addClass("input-field");
 
+    $(".card-color").addClass("card-bg");
+
     // section title border color
     $(".section-title").addClass("border-color");
 
