@@ -46,16 +46,25 @@ $(document).ready(function () {
 
    footer.on("mouseenter", function () {
         footer_content.stop(true, true).slideDown(1000, function () {
-           alert("Animation completed");
+           showCustomAlert();
         });
-    });
-
-     footer.on("mouseleave", function () {
-        footer_content.stop(true, false).slideUp(1000);
     });
 
     // showing refernce div
     $("#references").css("display", "flex");
+
+
+    function showCustomAlert() {
+        if ($("#custom-alert").is(":hidden")) {
+            $("#custom-alert").css("display", "flex");
+        }
+    }
+
+    $("#alert-ok-btn").click(function(){
+        $("#custom-alert").css("display","none");
+        footer_content.stop(true, false).slideUp(1000);
+    });
+
 
    
 });

@@ -181,7 +181,8 @@ body {
   background: rgba(0, 0, 0, 0.6);
   display: none;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 50px;
   z-index: 9999;
 }
 
